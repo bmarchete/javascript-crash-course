@@ -19,8 +19,21 @@ https://codepen.io/bmarchete/pen/LeYLEq
 https://codepen.io/bmarchete/pen/aVPQgX
 
 
-## Projeto
+### APIs públicas sem chave
+
+https://dog.ceo/dog-api/
+
+https://api.lyrics.ovh/v1/
+
+https://api.github.com
+
+https://api.chucknorris.io/
+
+
+## Projeto 1
 
 Desenvolver como o modelo a seguir
 
 ![Projeto](./projeto.png)
+
+
