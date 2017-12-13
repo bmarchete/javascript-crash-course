@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Digite o nome do aluno</h1>
+    <input type="text" id="nome">
+    <button id="enviar">Enviar</button>
+
+    <hr>
+
+    <h3>Dados</h3>
+
+    <div id="dados"></div>
+
+    <script>
+        let enviar = document.querySelector('#enviar');
+        let nome = document.querySelector('#nome');
+        let dados = document.querySelector('#dados');
+
+        enviar.addEventListener('click', funcEnviar);
+
+        function funcEnviar() {
+
+            axios.post(`api/insert.php?nome=${nome.value}`)
+            .then(function (response) {
+                    alert(`O servidor retornou o status ${response.status}`);
+                    nome.value = '';
+            })
+            .catch(function (error) {
+                    console.log(error);
+            });
+
+        }
+
+        setInterval(function(){
+            axios.get('api/select.php')
+            .then(function (response) {
+                //console.log(response);
+                appendData(response.data)
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        }, 3000);
+
+        function appendData(data){
+            dados.innerHTML = '';
+            
+            data.forEach(element => {
+                let p = document.createElement('p');
+                p.innerHTML = `Nome: ${element.nome}`;
+                dados.appendChild(p)
+            });
+        }
+    </script>
+</body>
+
+</html>

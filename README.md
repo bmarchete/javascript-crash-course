@@ -1,12 +1,12 @@
 # Javascript Crash Course
 
-Links para estudo
+Links that you can find more about Javascript
 
-## Basico
+## Basics
 
 https://gist.github.com/bmarchete/9fbd7f38c6121bfc9f708fd8ab3a51df
 
-## Manipualação de DOM
+## DOM manipulation
 
 https://gist.github.com/bmarchete/4007ee63c587ef1055c279881c799db2
 
@@ -19,8 +19,17 @@ https://codepen.io/bmarchete/pen/LeYLEq
 https://codepen.io/bmarchete/pen/aVPQgX
 
 
-## Projeto
+### Public APIs (no apy key needed)
 
-Desenvolver como o modelo a seguir
+https://api.github.com/
 
-![Projeto](./projeto.png)
+https://dog.ceo/dog-api/
+
+https://api.lyrics.ovh/v1/
+
+https://api.github.com
+
+https://api.chucknorris.io/
+
+
+
