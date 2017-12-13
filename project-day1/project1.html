@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    
 </head>
 <body>
-    
+        
         <p>Digite sua Resolução de ano novo, ou não!</p>
         <input type="text" id="resolucao">
         <button id="inserir">Agora Vai</button>
@@ -17,46 +18,8 @@
           
         </ul>
 
-    <script src="project1.js"></script>
-    <!-- <script>
-
-        let cont = 1;
-
-        let inserir = document.querySelector('#inserir');
-        let remover = document.querySelector('#remover');
-        let lista = document.querySelector('#lista');
-        let resolucao = document.querySelector('#resolucao');
-
-        inserir.addEventListener('click', insereResolucao);
-        remover.addEventListener('click', removeResolucao);
-
-
-        function insereResolucao(){
-            
-            let li = document.createElement('li');
-            
-            li.innerHTML = `(${cont}) - ${resolucao.value}`;
-            li.setAttribute('id', `id-${cont}`);
-            
-            cont++;
-            
-            lista.appendChild(li);
-        }
-
-        function removeResolucao(){
-            
-            let li = document.querySelector(`#id-${resolucao.value}`);
-            
-            let resposta = confirm('Quer mesmo remover?');
-            
-            if(resposta){
-                lista.removeChild(li);
-
-            }
+        <script src="project1.js"></script>
         
-        
-        }
-    </script> -->
     
 </body>
 </html>

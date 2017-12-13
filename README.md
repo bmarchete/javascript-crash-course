@@ -25,7 +25,7 @@ https://api.github.com/
 
 https://dog.ceo/dog-api/
 
-https://api.lyrics.ovh/v1/
+lyricsovh.docs.apiary.io
 
 https://api.github.com
 
