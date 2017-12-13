@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    
+    let aluno = {
+        'id' : 1, 
+        'nome' : 'binho',
+        'professor' : {
+            'id' : 1,
+            'nome' : 'Meu querido prof'
+        }
+    };
+
+    let array = [1,2,3,4];
+
+    let arrayAlunos = [
+        { 'id' : 1, 'nome' : 'binho'},
+        { 'id' : 2, 'nome' : 'Jessica'},
+        { 'id' : 3, 'nome' : 'Besourinho'},
+        
+    ];
+    
+    console.log(aluno.id);
+    console.log(aluno.nome);
+    console.log(aluno.professor.nome);
+    console.log(array[3]);
+    console.log(arrayAlunos[0].nome);
+    
+    // arrayAlunos.forEach(function (elemento){
+    //     console.log(elemento.id);
+    //     console.log(elemento.nome);
+        
+    // });
+    
+    //arrow functions
+
+    arrayAlunos.forEach(elemento =>  console.log(elemento.nome) );
+    
+
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-(function(){
+
     let cont = 1;
     
     let inserir = document.querySelector("#inserir");
@@ -30,6 +30,4 @@
       }
     }
     
-    return this.count;
-})();
 
